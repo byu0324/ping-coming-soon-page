@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  font-size: 18px;
+  --prim-blue: hsl(223, 87%, 63%);
+  --sec-blue: hsl(223, 100%, 88%);
+  --sec-red: hsl(354, 100%, 66%);
+  --neu-gray: hsl(0, 0%, 59%);
+  --neu-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  color: var(--neu-blue);
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  margin: 70px 0 45px 0;
+}
+
+h1 {
+  color: var(--neu-gray);
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+h1 span {
+  color: var(--neu-blue);
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+input {
+  width: 430px;
+  border-radius: 30px;
+  height: 45px;
+}
+
+#email {
+  border: 1px solid var(--sec-blue);
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+#email::placeholder {
+  color: var(--sec-blue);
+}
+
+#email:focus {
+  outline: none;
+}
+
+.error {
+  color:hsl(354, 100%, 66%);
+  font-size: .8rem;
+  margin-bottom: 18px;
+  display: none;
+}
+
+input[type='submit'] {
+  border:none;
+  background-color: var(--prim-blue);
+  color: white;
+  margin-bottom: 55px;
+  cursor: pointer;
+  box-shadow: 0 5px 3px var(--sec-blue);
+}
+
+input[type='submit']:hover {
+  background-color:hsl(223, 87%, 72%);
+}
+
+.illu {
+  width: 490px;
+  margin-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  gap: 15px;
+}
+
+a {
+  border: 1px solid var(--sec-blue);
+  color:hsl(223, 87%, 63%);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  display: flex;
+  font-size: 16px;
+  text-decoration: none;
+  align-items:center;
+  justify-content: center;
+}
+
+a:hover {
+  background-color: var(--prim-blue);
+  color: white;
+}
+
+.footer {
+  color:hsl(0, 0%, 59%);
+  font-size: .8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(min-width: 560px) {
+  :root {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #email {
+    width: 390px;
+    font-size: .65rem;
+  }
+
+  .error {
+    text-align: start;
+    margin-left: 30px;
+    font-size: .65rem;
+  }
+
+  input[type='submit'] {
+    width: 170px;
+    margin-bottom: 75px;
+  }
+
+  .illu {
+    width: 580px;
+    margin-bottom: 70px;
+  }
+
+  nav {
+    margin-bottom: 25px;
+  }
+}
