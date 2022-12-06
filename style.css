@@ -51,18 +51,26 @@ input {
   height: 45px;
 }
 
-#email {
+.email {
   border: 1px solid var(--sec-blue);
   margin-bottom: 10px;
   padding-left: 30px;
 }
 
-#email::placeholder {
+.email::placeholder {
   color: var(--sec-blue);
 }
 
-#email:focus {
+.email:focus {
   outline: none;
+}
+
+.email_error {
+  border: 1px solid var(--sec-red);
+}
+
+.email_error::placeholder {
+  color: hsl(354, 100%, 88%);
 }
 
 .error {
@@ -145,7 +153,7 @@ a:hover {
     gap: 12px;
   }
 
-  #email {
+  .email {
     width: 390px;
     font-size: .65rem;
   }
